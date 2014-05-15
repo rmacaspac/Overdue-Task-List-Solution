@@ -21,6 +21,10 @@
 		26216E2519234EAC002DFBFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26216E0719234EAC002DFBFA /* UIKit.framework */; };
 		26216E2D19234EAC002DFBFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26216E2B19234EAC002DFBFA /* InfoPlist.strings */; };
 		26216E2F19234EAC002DFBFA /* Overdue_Task_List_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26216E2E19234EAC002DFBFA /* Overdue_Task_List_SolutionTests.m */; };
+		26216E3A19234FFB002DFBFA /* RMAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26216E3919234FFB002DFBFA /* RMAddTaskViewController.m */; };
+		26216E3D1923500C002DFBFA /* RMDetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26216E3C1923500C002DFBFA /* RMDetailTaskViewController.m */; };
+		26216E4019235018002DFBFA /* RMEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26216E3F19235018002DFBFA /* RMEditTaskViewController.m */; };
+		26216E431923557E002DFBFA /* RMTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 26216E421923557E002DFBFA /* RMTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		26216E2A19234EAC002DFBFA /* Overdue Task List SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Overdue Task List SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		26216E2C19234EAC002DFBFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26216E2E19234EAC002DFBFA /* Overdue_Task_List_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overdue_Task_List_SolutionTests.m; sourceTree = "<group>"; };
+		26216E3819234FFB002DFBFA /* RMAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAddTaskViewController.h; sourceTree = "<group>"; };
+		26216E3919234FFB002DFBFA /* RMAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAddTaskViewController.m; sourceTree = "<group>"; };
+		26216E3B1923500C002DFBFA /* RMDetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDetailTaskViewController.h; sourceTree = "<group>"; };
+		26216E3C1923500C002DFBFA /* RMDetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDetailTaskViewController.m; sourceTree = "<group>"; };
+		26216E3E19235018002DFBFA /* RMEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMEditTaskViewController.h; sourceTree = "<group>"; };
+		26216E3F19235018002DFBFA /* RMEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMEditTaskViewController.m; sourceTree = "<group>"; };
+		26216E411923557E002DFBFA /* RMTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTask.h; sourceTree = "<group>"; };
+		26216E421923557E002DFBFA /* RMTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,13 @@
 				26216E1519234EAC002DFBFA /* Main.storyboard */,
 				26216E1819234EAC002DFBFA /* RMViewController.h */,
 				26216E1919234EAC002DFBFA /* RMViewController.m */,
+				26216E3819234FFB002DFBFA /* RMAddTaskViewController.h */,
+				26216E3919234FFB002DFBFA /* RMAddTaskViewController.m */,
+				26216E3B1923500C002DFBFA /* RMDetailTaskViewController.h */,
+				26216E3C1923500C002DFBFA /* RMDetailTaskViewController.m */,
+				26216E3E19235018002DFBFA /* RMEditTaskViewController.h */,
+				26216E3F19235018002DFBFA /* RMEditTaskViewController.m */,
+				26216E4419235585002DFBFA /* Model */,
 				26216E1B19234EAC002DFBFA /* Images.xcassets */,
 				26216E0A19234EAC002DFBFA /* Supporting Files */,
 			);
@@ -150,6 +169,15 @@
 				26216E2B19234EAC002DFBFA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26216E4419235585002DFBFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26216E411923557E002DFBFA /* RMTask.h */,
+				26216E421923557E002DFBFA /* RMTask.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26216E4019235018002DFBFA /* RMEditTaskViewController.m in Sources */,
+				26216E3D1923500C002DFBFA /* RMDetailTaskViewController.m in Sources */,
 				26216E1019234EAC002DFBFA /* main.m in Sources */,
 				26216E1419234EAC002DFBFA /* RMAppDelegate.m in Sources */,
+				26216E3A19234FFB002DFBFA /* RMAddTaskViewController.m in Sources */,
 				26216E1A19234EAC002DFBFA /* RMViewController.m in Sources */,
+				26216E431923557E002DFBFA /* RMTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

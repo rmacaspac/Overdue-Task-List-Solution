@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RMAddTaskViewController.h"
+#import "RMTask.h"
+#import "RMDetailTaskViewController.h"
 
-@interface RMViewController : UIViewController
+@interface RMViewController : UIViewController <RMAddTaskViewControllerDelegate, RMDetailTaskViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *taskObjects;
+
+- (IBAction)reorderBarButtonItemPressed:(UIBarButtonItem *)sender;
+- (IBAction)addTaskBarButtonItemPressed:(UIBarButtonItem *)sender;
 
 @end
